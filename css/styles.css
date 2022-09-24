@@ -1,0 +1,26 @@
+:root {
+  --cream-color: #ffefe3;
+  --dark-bg-color: #141329;
+}
+
+@font-face {
+  font-family: "Obviously";
+  src: url("../assets/fonts/Obviously-Narrow_Bold.woff2");
+}
+@font-face {
+  font-family: "Vulf Sans";
+  src: url("../assets/fonts/Vulf_Sans-Regular.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--cream-color);
+  background: var(--dark-bg-color);
+}
