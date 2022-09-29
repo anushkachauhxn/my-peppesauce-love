@@ -1,0 +1,59 @@
+$cream-color: #ffefe3;
+$dark-bg-color: #141329;
+
+@font-face {
+  font-family: "Obviously";
+  src: url("../fonts/Obviously-Narrow_Bold.woff2");
+}
+@font-face {
+  font-family: "Vulf Sans";
+  src: url("../fonts/Vulf_Sans-Regular.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  color: $cream-color;
+  background: $dark-bg-color;
+}
+
+img {
+  height: 100%;
+  object-fit: cover;
+}
+
+section {
+  height: 50vh;
+}
+
+/* BUY NOW STRIP */
+.buy-now {
+  white-space: nowrap;
+
+  .scroll-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+    p {
+      font-family: "Obviously", sans-serif;
+      font-size: 3.5vw;
+      line-height: 3.5vw;
+    }
+
+    img {
+      width: 2.5vw;
+      will-change: transform;
+      transform-style: preserve-3d;
+    }
+  }
+}

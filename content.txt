@@ -1,0 +1,68 @@
+<p class="text-block" aria-hidden="true">BUY NOW</p>
+
+==>>>> section #1
+<h2 class="title mobile">THE JOY OF <br>PEPPA SAUCE</h2>
+<p class="text mobile">“mama Joyce” was making this sauce with a hand mill, and has been doing so for almost 50 years for her family and friends.<br>Spreading the joy of peppa sauce.</p>
++
+bottle
++
+<h2 class="text-large"> blasian<br>hot sauce</h2>
+<h2 class="title-large">2,400 SHU</h2>
+
+<div class="text-block-wulf mobile" aria-hidden="true">WTF IS GUYANA </div>
+
+==>>>> article #1
+<h2 class="mega-title smaller">A TASTE <br>OF GUYANA</h2>
+<p class="text-wide mobile">The country you probably thought was in Africa, Guyana is the only English speaking country in South America. It’s also one of the most diverse regions in the world, we celebrate 6 peoples in our national anthem (Indigenous, East Indian, African, Portuguese, European and Chinese). Each culture brought their cuisine with them making for unique foods. Our sauce is no different, combining spices originating from African and Asian cultures with a Carribean twist.</p>
+
+==>>>> big strips #1
+<p class="mega-title">EGG </p>
+<p class="text-block-wulf low" aria-hidden="true">THE<br>BEST<br>WITH</p>
+
+<p class="mega-title">CHICKEN </p>
+<p class="text-block-wulf low" aria-hidden="true">GOES<br>GREAT<br>WITH</p>
+
+<p class="mega-title" aria-hidden="true">STEAK </p>
+<p class="text-block-wulf low" aria-hidden="true">DAMN <br>GOOD<br>WITH</p>
+
+==>>>> section #2
+<h2 class="title">OUR FAMILY <br>TO YOURS</h2>
+<p class="text">WE'RE BRINGING A GENERATIONAL TRADITION OF fiery PEPPA SAUCE TO YOU. A time tested recipe of explosive blasian flavor, from our family to yours.</p>
++
+auntie
++
+<h2 class="title below">HAND<br>MILLED</h2>
+<p class="text">NO COMPROMISE. STILL HAND MILLED LIKE IT HAS BEEN FOR THE PAST 100 YEARS.<br></p>
+
+==>>>> big strips #2
+<p class="ultra-title">EVERYTHING </p>
+<p class="text-block-wulf low large">THIS<br>SAUCE<br>IS NOT <br>FOR</p>
+
+==>>>> article #2
+<h2 class="big-title mobile">FLAVOR <br>MEET HEAT<br></h2>
+<p class="text-wide mobile">Most hot sauces have a forward Vinegar taste, with a back-note of heat, with very little nod to other ingredients. Mama Joyce's Peppa Sauce is unique in flavor, it is not only hot, but has spices that are indigenous to the African, Asian cultures, we use Cumin, Curry Powder and other spices that separates my hot sauce from others. We can’t give you all the secrets so you’ll just have to try it!</p>
+
+==>>>> big strips #3
+<p class="text-block-wulf low" aria-hidden="true">DON'T <br>RUIN IT<br>WITH</p>
+<p class="mega-title" aria-hidden="true">MINT</p>
+
+<p class="text-block-wulf low" aria-hidden="true">LEAVE<br>OUT<br>THE</p>
+<p class="mega-title" aria-hidden="true">RASPBERRY </p>
+
+<p class="text-block-wulf low" aria-hidden="true">DO NOT<br>TRY IT<br>WITH</p>
+<p class="mega-title" aria-hidden="true">CEREAL </p>
+
+==>>>> section #3
+<h2 class="title">BUY THE <br>DAMN STUFF</h2>
+<p class="text"> WE CAN'T MAKE A WEBSITE TASTE LIKE MAMA JOYCE'S PEPPA SAUCE - WE'VE TRIED. SO if you want TO TRY IT FOR YOURSELF you'll just have to buy the damn stuff.<br></p>
++
+bottle
++
+<p class="text-large bottom">You've <br>been warned</p>
+<p class="title-small">THIS SAUCE<br>BITES BACK</p>
+
+==>>>> footer
+<a href="privacy-policy.html" class="link">Privacy policy</a>
+<a href="terms-and-conditions.html" class="link">terms &amp; conditions</a>
+<a href="https://www.vaangroup.com/" rel="noopener" target="_blank" class="link">by vaan group</a>
+
