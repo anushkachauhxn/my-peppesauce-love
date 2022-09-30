@@ -14,41 +14,123 @@
 }
 
 body {
+  margin: 1vw 0;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
-  color: #ffefe3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1vw;
+  color: #feeee2;
   background: #141329;
 }
 
+/* General */
 img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-section {
-  height: 50vh;
+/* Text Styles */
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Obviously", sans-serif;
+  text-align: center;
+}
+
+.title-large {
+  font-size: 4.5vw;
+  line-height: 3.3vw;
+}
+
+.title {
+  font-size: 3.5vw;
+  line-height: 3.3vw;
+  text-transform: uppercase;
+}
+
+.text-block {
+  padding-bottom: 0.5vw;
+  font-size: 3.5vw;
+}
+
+.text-large {
+  font-size: 2.5vw;
+  line-height: 2.5vw;
+  text-transform: uppercase;
+  font-family: "Vulf Sans", sans-serif;
+}
+
+.text {
+  width: 20vw;
+  font-size: 2.5vw;
+  line-height: 3vw;
+  text-transform: uppercase;
+  font-family: "Vulf Sans", sans-serif;
+}
+
+/* Images */
+.star {
+  width: 2.5vw;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+.fire {
+  width: 18.5vw;
+  height: auto;
 }
 
 /* BUY NOW STRIP */
-.buy-now {
-  white-space: nowrap;
-}
 .buy-now .scroll-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  white-space: nowrap;
 }
-.buy-now .scroll-container p {
-  font-family: "Obviously", sans-serif;
-  font-size: 3.5vw;
-  line-height: 3.5vw;
+
+/* MAIN SECTIONS */
+.main {
+  width: 97vw;
+  height: 54vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
 }
-.buy-now .scroll-container img {
-  width: 2.5vw;
-  will-change: transform;
-  transform-style: preserve-3d;
+.main > div {
+  height: 100%;
+}
+.main .text-container {
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5vw;
+  border: 0.25vw solid #feeee2;
+}
+.main .text-container.left {
+  row-gap: 2vw;
+}
+.main .text-container.right {
+  row-gap: 1.5vw;
+}
+.main .text-container.right .img-container {
+  padding: 0.75vw;
+  width: 101%;
+  text-align: center;
+  border-top: 0.25vw solid #feeee2;
+  border-bottom: 0.25vw solid #feeee2;
+}
+.main .logo-container .logo {
+  width: 47vw;
 }/*# sourceMappingURL=styles.css.map */

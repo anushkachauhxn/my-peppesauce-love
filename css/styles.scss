@@ -1,4 +1,4 @@
-$cream-color: #ffefe3;
+$cream-color: #feeee2;
 $dark-bg-color: #141329;
 
 @font-face {
@@ -18,42 +18,136 @@ $dark-bg-color: #141329;
 }
 
 body {
+  margin: 1vw 0;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1vw;
+
   color: $cream-color;
   background: $dark-bg-color;
 }
 
+/* General */
 img {
   height: 100%;
   object-fit: cover;
 }
 
-section {
-  height: 50vh;
+/* Text Styles */
+h1,
+h2,
+h3,
+h4,
+p {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+
+  font-family: "Obviously", sans-serif;
+  text-align: center;
+}
+
+.title-large {
+  //   margin-bottom: 1vw;
+  font-size: 4.5vw;
+  line-height: 3.3vw;
+}
+.title {
+  //   margin-bottom: auto;
+  font-size: 3.5vw;
+  line-height: 3.3vw;
+  text-transform: uppercase;
+}
+
+.text-block {
+  padding-bottom: 0.5vw;
+  font-size: 3.5vw;
+}
+.text-large {
+  //   margin: 2vw auto auto;
+  font-size: 2.5vw;
+  line-height: 2.5vw;
+  text-transform: uppercase;
+  font-family: "Vulf Sans", sans-serif;
+}
+.text {
+  //   margin: 2vw auto auto;
+  width: 20vw;
+  font-size: 2.5vw;
+  line-height: 3vw;
+  text-transform: uppercase;
+  font-family: "Vulf Sans", sans-serif;
+}
+
+/* Images */
+.star {
+  width: 2.5vw;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+.fire {
+  width: 18.5vw;
+  height: auto;
 }
 
 /* BUY NOW STRIP */
 .buy-now {
-  white-space: nowrap;
-
   .scroll-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 2vw;
+    white-space: nowrap;
+  }
+}
 
-    p {
-      font-family: "Obviously", sans-serif;
-      font-size: 3.5vw;
-      line-height: 3.5vw;
+/* MAIN SECTIONS */
+.main {
+  width: 97vw;
+  height: 54vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+
+  > div {
+    height: 100%;
+  }
+
+  .text-container {
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vw;
+    border: 0.25vw solid $cream-color;
+
+    &.left {
+      row-gap: 2vw;
     }
+    &.right {
+      row-gap: 1.5vw;
+      .img-container {
+        padding: 0.75vw;
+        width: 101%;
+        text-align: center;
+        border-top: 0.25vw solid $cream-color;
+        border-bottom: 0.25vw solid $cream-color;
+      }
+    }
+  }
 
-    img {
-      width: 2.5vw;
-      will-change: transform;
-      transform-style: preserve-3d;
+  .logo-container {
+    .logo {
+      width: 47vw;
     }
   }
 }
