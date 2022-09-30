@@ -1,34 +1,53 @@
 /* ScrollMagic Controller */
 let controller = new ScrollMagic.Controller();
 
-/* BUY NOW STRIPS */
-const buyNow = document.querySelectorAll(".buy-now");
+/* BUY NOW + WTF STRIPS */
+const scrollContainers = document.querySelectorAll(".scroll-container");
 
-buyNow.forEach((strip) => {
-  const scrollContainer = strip.querySelector(".scroll-container"),
-    starImgs = strip.querySelectorAll(".scroll-container img");
+scrollContainers.forEach((scrollContainer) => {
+  const starImgs = scrollContainer.querySelectorAll("img");
 
+  // scroll direction
+  const left = scrollContainer.classList.contains("left"),
+    right = scrollContainer.classList.contains("right"),
+    top = scrollContainer.classList.contains("top"),
+    bottom = scrollContainer.classList.contains("bottom");
+
+  // gsap timeline
   let tl = gsap.timeline();
 
-  if (scrollContainer.classList.contains("left")) {
-    /* Move left with scroll */
+  if (left || top || bottom) {
+    // top and bottom scrollContainers are basically rotated lefts
     tl.add("start")
       .fromTo(scrollContainer, { x: 250 }, { x: -50 }, "start")
       .fromTo(starImgs, { rotateZ: 719 }, { rotateZ: 33 }, "start");
-  } else {
-    /* Move right with scroll */
+  } else if (right) {
     tl.add("start")
       .fromTo(scrollContainer, { x: -50 }, { x: 250 }, "start")
       .fromTo(starImgs, { rotateZ: 33 }, { rotateZ: 719 }, "start");
   }
 
-  new ScrollMagic.Scene({
-    triggerElement: scrollContainer,
-    triggerHook: "onEnter",
-    duration: "100%",
-  })
-    .setTween(tl)
-    .addTo(controller);
+  // scrollmagic scene
+  if (left || right) {
+    new ScrollMagic.Scene({
+      triggerElement: scrollContainer,
+      triggerHook: "onEnter",
+      duration: "100%",
+    })
+      .setTween(tl)
+      .addTo(controller);
+  } else if (top || bottom) {
+    // Here, onEnter happens very early because their 'width' is vertical
+    // so triggerElement has to be the section and not the strip
+    new ScrollMagic.Scene({
+      triggerElement: scrollContainer.parentElement.parentElement.parentElement,
+      triggerHook: "onEnter",
+      duration: "200%",
+    })
+      .setTween(tl)
+      .addIndicators()
+      .addTo(controller);
+  }
 });
 
 /* INFO SECTIONS: INNER SCROLL */
@@ -46,6 +65,5 @@ infoSection.forEach((section) => {
     duration: "200%",
   })
     .setTween(tl)
-    .addIndicators()
     .addTo(controller);
 });
