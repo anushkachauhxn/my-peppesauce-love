@@ -90,6 +90,12 @@ p {
   padding-bottom: 0.5vw;
   font-size: 3.5vw;
 }
+.text-block-2 {
+  padding-bottom: 0.5vw;
+  font-size: 2vw;
+  line-height: 2vw;
+  font-family: "Vulf Sans", sans-serif;
+}
 .text-large {
   //   margin: 2vw auto auto;
   font-size: 2.5vw;
@@ -125,12 +131,10 @@ p {
 }
 
 /* BUY NOW STRIP */
-.buy-now {
-  .scroll-container {
-    @include flex-center-row();
-    column-gap: 2vw;
-    white-space: nowrap;
-  }
+.scroll-container {
+  @include flex-center-row();
+  column-gap: 2vw;
+  white-space: nowrap;
 }
 
 /* MAIN SECTIONS */
@@ -174,8 +178,13 @@ p {
 }
 
 .info-section {
+  margin: 5vw;
+  width: 97vw;
+  height: 54vw;
+  @include flex-center-row();
+  position: relative;
+
   .content {
-    // margin: 1.5vw 0;
     width: 88vw;
     height: 54vw;
     overflow: hidden;
@@ -193,6 +202,40 @@ p {
       @include flex-center-col();
       row-gap: 6vw;
       @include transform-animation();
+    }
+  }
+
+  .borders {
+    .wtf {
+      height: 5vw;
+      @include flex-center-row();
+      position: absolute;
+      overflow: hidden;
+
+      &.top {
+        width: 88vw;
+        top: -5vw;
+        border-top: 0.25vw solid $cream-color;
+      }
+      &.bottom {
+        width: 88vw;
+        bottom: -5vw;
+        border-bottom: 0.25vw solid $cream-color;
+      }
+      &.left {
+        width: 55vw;
+        top: 25vw;
+        left: -25vw;
+        transform: rotate(-90deg);
+        border-top: 0.25vw solid $cream-color;
+      }
+      &.right {
+        width: 55vw;
+        top: 25vw;
+        right: -25vw;
+        transform: rotate(90deg);
+        border-top: 0.25vw solid $cream-color;
+      }
     }
   }
 }

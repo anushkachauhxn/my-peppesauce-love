@@ -10,7 +10,7 @@ buyNow.forEach((strip) => {
 
   let tl = gsap.timeline();
 
-  if (strip.classList.contains("left")) {
+  if (strip.classList.contains("scroll-left")) {
     /* Move left with scroll */
     tl.add("start")
       .fromTo(scrollContainer, { x: 250 }, { x: -50 }, "start")

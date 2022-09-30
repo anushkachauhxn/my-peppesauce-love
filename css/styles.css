@@ -72,6 +72,13 @@ p {
   font-size: 3.5vw;
 }
 
+.text-block-2 {
+  padding-bottom: 0.5vw;
+  font-size: 2vw;
+  line-height: 2vw;
+  font-family: "Vulf Sans", sans-serif;
+}
+
 .text-large {
   font-size: 2.5vw;
   line-height: 2.5vw;
@@ -110,7 +117,7 @@ p {
 }
 
 /* BUY NOW STRIP */
-.buy-now .scroll-container {
+.scroll-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -161,6 +168,16 @@ p {
   width: 47vw;
 }
 
+.info-section {
+  margin: 5vw;
+  width: 97vw;
+  height: 54vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 .info-section .content {
   width: 88vw;
   height: 54vw;
@@ -188,4 +205,37 @@ p {
   will-change: transform;
   transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
+}
+.info-section .borders .wtf {
+  height: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  overflow: hidden;
+}
+.info-section .borders .wtf.top {
+  width: 88vw;
+  top: -5vw;
+  border-top: 0.25vw solid #feeee2;
+}
+.info-section .borders .wtf.bottom {
+  width: 88vw;
+  bottom: -5vw;
+  border-bottom: 0.25vw solid #feeee2;
+}
+.info-section .borders .wtf.left {
+  width: 55vw;
+  top: 25vw;
+  left: -25vw;
+  transform: rotate(-90deg);
+  border-top: 0.25vw solid #feeee2;
+}
+.info-section .borders .wtf.right {
+  width: 55vw;
+  top: 25vw;
+  right: -25vw;
+  transform: rotate(90deg);
+  border-top: 0.25vw solid #feeee2;
 }/*# sourceMappingURL=styles.css.map */
