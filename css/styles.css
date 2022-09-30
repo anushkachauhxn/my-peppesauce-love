@@ -106,9 +106,15 @@ p {
 /* Images */
 .star {
   width: 2.5vw;
+  height: auto;
   will-change: transform;
   transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
+}
+
+.star-2 {
+  width: 9vw;
+  height: auto;
 }
 
 .fire {
@@ -238,4 +244,24 @@ p {
   right: -25vw;
   transform: rotate(90deg);
   border-top: 0.25vw solid #feeee2;
+}
+.info-section .corners .star-2 {
+  position: absolute;
+  z-index: 2;
+}
+.info-section .corners .star-2.top-left {
+  left: 0;
+  top: -5vw;
+}
+.info-section .corners .star-2.top-right {
+  right: 0;
+  top: -5vw;
+}
+.info-section .corners .star-2.bottom-left {
+  left: 0;
+  bottom: -5vw;
+}
+.info-section .corners .star-2.bottom-right {
+  right: 0;
+  bottom: -5vw;
 }/*# sourceMappingURL=styles.css.map */

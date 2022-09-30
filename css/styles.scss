@@ -123,7 +123,12 @@ p {
 /* Images */
 .star {
   width: 2.5vw;
+  height: auto;
   @include transform-animation();
+}
+.star-2 {
+  width: 9vw;
+  height: auto;
 }
 .fire {
   width: 18.5vw;
@@ -211,7 +216,6 @@ p {
       @include flex-center-row();
       position: absolute;
       overflow: hidden;
-
       &.top {
         width: 88vw;
         top: -5vw;
@@ -235,6 +239,29 @@ p {
         right: -25vw;
         transform: rotate(90deg);
         border-top: 0.25vw solid $cream-color;
+      }
+    }
+  }
+
+  .corners {
+    .star-2 {
+      position: absolute;
+      z-index: 2;
+      &.top-left {
+        left: 0;
+        top: -5vw;
+      }
+      &.top-right {
+        right: 0;
+        top: -5vw;
+      }
+      &.bottom-left {
+        left: 0;
+        bottom: -5vw;
+      }
+      &.bottom-right {
+        right: 0;
+        bottom: -5vw;
       }
     }
   }
