@@ -100,6 +100,7 @@ p {
 .star {
   width: 2.5vw;
   will-change: transform;
+  transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
 
@@ -184,4 +185,7 @@ p {
   align-items: center;
   text-align: center;
   row-gap: 6vw;
+  will-change: transform;
+  transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
 }/*# sourceMappingURL=styles.css.map */

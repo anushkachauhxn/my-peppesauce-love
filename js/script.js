@@ -28,6 +28,24 @@ buyNow.forEach((strip) => {
     duration: "100%",
   })
     .setTween(tl)
+    .addTo(controller);
+});
+
+/* INFO SECTIONS: INNER SCROLL */
+const infoSection = document.querySelectorAll(".info-section");
+
+infoSection.forEach((section) => {
+  const scrollContainer = section.querySelector(".inner-scroll");
+
+  let tl = gsap.timeline();
+  tl.fromTo(scrollContainer, { y: "36vw" }, { y: "-24vw" });
+
+  new ScrollMagic.Scene({
+    triggerElement: section,
+    triggerHook: "onEnter",
+    duration: "200%",
+  })
+    .setTween(tl)
     .addIndicators()
     .addTo(controller);
 });

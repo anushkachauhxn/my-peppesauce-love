@@ -14,6 +14,12 @@ $dark-bg-color: #141329;
   align-items: center;
   text-align: center;
 }
+@mixin transform-animation {
+  will-change: transform;
+  transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
 
 @font-face {
   font-family: "Obviously";
@@ -111,8 +117,7 @@ p {
 /* Images */
 .star {
   width: 2.5vw;
-  will-change: transform;
-  transform-style: preserve-3d;
+  @include transform-animation();
 }
 .fire {
   width: 18.5vw;
@@ -187,6 +192,7 @@ p {
       height: 55vw;
       @include flex-center-col();
       row-gap: 6vw;
+      @include transform-animation();
     }
   }
 }
