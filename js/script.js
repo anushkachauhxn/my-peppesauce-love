@@ -5,7 +5,7 @@ let controller = new ScrollMagic.Controller();
 const scrollContainers = document.querySelectorAll(".scroll-container");
 
 scrollContainers.forEach((scrollContainer) => {
-  const starImgs = scrollContainer.querySelectorAll("img");
+  const starImgs = scrollContainer.querySelectorAll(".star");
 
   // scroll direction
   const left = scrollContainer.classList.contains("left"),

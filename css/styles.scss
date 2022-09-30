@@ -71,7 +71,7 @@ p {
   //   padding-bottom: 4vw;
   font-size: 17vw;
   line-height: 14vw;
-  letter-spacing: 0.5vw;
+  letter-spacing: -0.5vw;
   white-space: nowrap;
 }
 .title-large {
@@ -134,15 +134,30 @@ p {
   width: 18.5vw;
   height: auto;
 }
+.egg {
+  width: 12vw;
+  height: auto;
+  transform: translateY(-0.5vw) rotateZ(-4.5deg);
+  transform-style: preserve-3d;
+}
+.chicken {
+  width: 13vw;
+  height: auto;
+  transform: translateY(2vw);
+}
+.bull {
+  width: 23vw;
+  height: auto;
+  transform: translateY(2vw);
+}
 
-/* BUY NOW STRIP */
 .scroll-container {
   @include flex-center-row();
   column-gap: 2vw;
   white-space: nowrap;
 }
 
-/* MAIN SECTIONS */
+/* -------------------- MAIN SECTIONS -------------------- */
 .main-section {
   width: 97vw;
   height: 54vw;
@@ -182,6 +197,7 @@ p {
   }
 }
 
+/* -------------------- INFO SECTIONS -------------------- */
 .info-section {
   margin: 5vw;
   width: 97vw;
@@ -207,6 +223,9 @@ p {
       @include flex-center-col();
       row-gap: 6vw;
       @include transform-animation();
+      .mega-title {
+        letter-spacing: 0.5vw;
+      }
     }
   }
 
@@ -262,6 +281,26 @@ p {
       &.bottom-right {
         right: 0;
         bottom: -5vw;
+      }
+    }
+  }
+}
+
+.large-strip {
+  padding-bottom: 2vw;
+  @include flex-center-col();
+  row-gap: 2vw;
+
+  .strip {
+    .scroll-container {
+      align-items: flex-end;
+      column-gap: 1vw;
+      img {
+        padding-left: 0.25vw;
+      }
+      .text-block-2 {
+        padding: 0;
+        text-align: right;
       }
     }
   }
