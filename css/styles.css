@@ -134,7 +134,8 @@ p {
   transform-style: preserve-3d;
 }
 
-.star-2 {
+.star-2,
+.flame {
   width: 9vw;
   height: auto;
 }
@@ -333,23 +334,23 @@ p {
   transform: rotate(90deg);
   border-top: 0.25vw solid #feeee2;
 }
-.info-section .corners .star-2 {
+.info-section .corners img {
   position: absolute;
   z-index: 2;
 }
-.info-section .corners .star-2.top-left {
+.info-section .corners img.top-left {
   left: 0;
   top: -5vw;
 }
-.info-section .corners .star-2.top-right {
+.info-section .corners img.top-right {
   right: 0;
   top: -5vw;
 }
-.info-section .corners .star-2.bottom-left {
+.info-section .corners img.bottom-left {
   left: 0;
   bottom: -5vw;
 }
-.info-section .corners .star-2.bottom-right {
+.info-section .corners img.bottom-right {
   right: 0;
   bottom: -5vw;
 }

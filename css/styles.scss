@@ -138,7 +138,8 @@ p {
   height: auto;
   @include transform-animation();
 }
-.star-2 {
+.star-2,
+.flame {
   width: 9vw;
   height: auto;
 }
@@ -313,7 +314,7 @@ p {
   }
 
   .corners {
-    .star-2 {
+    img {
       position: absolute;
       z-index: 2;
       &.top-left {
