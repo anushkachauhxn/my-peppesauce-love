@@ -50,10 +50,17 @@ body {
   background: $dark-bg-color;
 }
 
-/* General */
+/* General Styles */
 img {
   height: 100%;
   object-fit: cover;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Text Styles */
@@ -119,7 +126,6 @@ p {
   font-family: "Vulf Sans", sans-serif;
 }
 .text {
-  width: 20vw;
   font-size: 2.5vw;
   line-height: 3vw;
   text-transform: uppercase;
@@ -194,6 +200,7 @@ p {
   }
 }
 
+/* Scroll Container : Animations */
 .scroll-container {
   @include flex-center-row();
   column-gap: 2vw;
@@ -216,9 +223,11 @@ p {
     width: 22vw;
     @include flex-center-col();
     row-gap: 2vw;
-    border-radius: 5vw;
     border: 0.25vw solid $cream-color;
-
+    border-radius: 5vw;
+    .text {
+      width: 20vw;
+    }
     .img-container {
       padding: 0.75vw;
       width: 101%;
@@ -227,7 +236,6 @@ p {
       border-bottom: 0.25vw solid $cream-color;
     }
   }
-
   .logo-container {
     .logo {
       width: 47vw;
@@ -331,27 +339,39 @@ p {
 .large-strip {
   @include flex-center-col();
   row-gap: 2vw;
-
-  .strip {
-    .scroll-container {
-      align-items: flex-end;
-      column-gap: 1vw;
-      img {
-        padding-left: 0.25vw;
-      }
-      .text-block-2 {
-        padding: 0;
-        text-align: right;
-      }
+  .strip .scroll-container {
+    align-items: flex-end;
+    column-gap: 1vw;
+    img {
+      padding-left: 0.25vw;
+    }
+    .text-block-2 {
+      padding: 0;
+      text-align: right;
     }
   }
-
   &.large-strip-1 {
     margin-bottom: 2vw;
   }
-
   &.large-strip-3 {
     margin-top: -3vw;
     margin-bottom: 3vw;
+  }
+}
+
+.footer {
+  padding: 3vw 0;
+  width: 97vw;
+  @include flex-center-col();
+  row-gap: 1vw;
+  border-radius: 5vw;
+  border: 0.25vw solid $cream-color;
+  .logo {
+    width: 90vw;
+    height: auto;
+  }
+  .links {
+    @include flex-center-row();
+    column-gap: 2vw;
   }
 }
