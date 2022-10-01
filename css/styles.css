@@ -49,6 +49,12 @@ p {
   font-family: "Obviously", sans-serif;
 }
 
+.ultra-title {
+  padding-bottom: 10vw;
+  font-size: 40vw;
+  line-height: 24vw;
+}
+
 .mega-title {
   font-size: 17vw;
   line-height: 14vw;
@@ -77,6 +83,14 @@ p {
   font-size: 2vw;
   line-height: 2vw;
   font-family: "Vulf Sans", sans-serif;
+}
+
+.text-block-3 {
+  font-size: 4vw;
+  line-height: 4vw;
+  font-family: "Vulf Sans", sans-serif;
+  align-self: flex-start;
+  text-align: right;
 }
 
 .text-large {
@@ -329,7 +343,6 @@ p {
 }
 
 .large-strip {
-  padding-bottom: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -348,6 +361,9 @@ p {
 .large-strip .strip .scroll-container .text-block-2 {
   padding: 0;
   text-align: right;
+}
+.large-strip.large-strip-1 {
+  margin-bottom: 2vw;
 }
 .large-strip.large-strip-3 {
   margin-top: -3vw;

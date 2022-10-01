@@ -66,21 +66,22 @@ p {
   font-family: "Obviously", sans-serif;
 }
 
+.ultra-title {
+  padding-bottom: 10vw;
+  font-size: 40vw;
+  line-height: 24vw;
+}
 .mega-title {
-  //   margin-top: auto;
-  //   padding-bottom: 4vw;
   font-size: 17vw;
   line-height: 14vw;
   letter-spacing: -0.5vw;
   white-space: nowrap;
 }
 .title-large {
-  //   margin-bottom: 1vw;
   font-size: 4.5vw;
   line-height: 3.3vw;
 }
 .title {
-  //   margin-bottom: auto;
   font-size: 3.5vw;
   line-height: 3.5vw;
   text-transform: uppercase;
@@ -96,8 +97,14 @@ p {
   line-height: 2vw;
   font-family: "Vulf Sans", sans-serif;
 }
+.text-block-3 {
+  font-size: 4vw;
+  line-height: 4vw;
+  font-family: "Vulf Sans", sans-serif;
+  align-self: flex-start;
+  text-align: right;
+}
 .text-large {
-  //   margin: 2vw auto auto;
   font-size: 2.5vw;
   line-height: 2.5vw;
   text-transform: uppercase;
@@ -112,7 +119,6 @@ p {
   font-family: "Vulf Sans", sans-serif;
 }
 .text {
-  //   margin: 2vw auto auto;
   width: 20vw;
   font-size: 2.5vw;
   line-height: 3vw;
@@ -323,7 +329,6 @@ p {
 }
 
 .large-strip {
-  padding-bottom: 2vw;
   @include flex-center-col();
   row-gap: 2vw;
 
@@ -339,6 +344,10 @@ p {
         text-align: right;
       }
     }
+  }
+
+  &.large-strip-1 {
+    margin-bottom: 2vw;
   }
 
   &.large-strip-3 {
