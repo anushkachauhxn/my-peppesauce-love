@@ -63,7 +63,7 @@ p {
 
 .title {
   font-size: 3.5vw;
-  line-height: 3.3vw;
+  line-height: 3.5vw;
   text-transform: uppercase;
 }
 
@@ -150,6 +150,24 @@ p {
 .snake {
   width: 16vw;
   height: auto;
+}
+
+.mint {
+  width: 18vw;
+  height: auto;
+  transform: translateY(3vw);
+}
+
+.raspberry {
+  width: 16vw;
+  height: auto;
+  transform: translateY(4vw);
+}
+
+.cereal {
+  width: 25vw;
+  height: auto;
+  transform: translateY(3vw);
 }
 
 /* Line Dividers */
@@ -330,4 +348,8 @@ p {
 .large-strip .strip .scroll-container .text-block-2 {
   padding: 0;
   text-align: right;
+}
+.large-strip.large-strip-3 {
+  margin-top: -3vw;
+  margin-bottom: 3vw;
 }/*# sourceMappingURL=styles.css.map */
