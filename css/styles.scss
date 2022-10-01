@@ -150,6 +150,28 @@ p {
   height: auto;
   transform: translateY(2vw);
 }
+.handmill {
+  margin-top: -2vw;
+  width: 18vw;
+  height: auto;
+}
+.snake {
+  width: 16vw;
+  height: auto;
+}
+
+/* Line Dividers */
+.line {
+  width: 101%;
+  height: 0.25vw;
+  background-color: $cream-color;
+  &.top {
+    margin-top: 0.5vw;
+  }
+  &.bottom {
+    margin-bottom: 0.5vw;
+  }
+}
 
 .scroll-container {
   @include flex-center-row();
@@ -172,21 +194,16 @@ p {
   .text-container {
     width: 22vw;
     @include flex-center-col();
+    row-gap: 2vw;
     border-radius: 5vw;
     border: 0.25vw solid $cream-color;
 
-    &.left {
-      row-gap: 2vw;
-    }
-    &.right {
-      row-gap: 1.5vw;
-      .img-container {
-        padding: 0.75vw;
-        width: 101%;
-        text-align: center;
-        border-top: 0.25vw solid $cream-color;
-        border-bottom: 0.25vw solid $cream-color;
-      }
+    .img-container {
+      padding: 0.75vw;
+      width: 101%;
+      text-align: center;
+      border-top: 0.25vw solid $cream-color;
+      border-bottom: 0.25vw solid $cream-color;
     }
   }
 
@@ -194,6 +211,10 @@ p {
     .logo {
       width: 47vw;
     }
+  }
+
+  &.section-1 .right {
+    row-gap: 1.25vw;
   }
 }
 

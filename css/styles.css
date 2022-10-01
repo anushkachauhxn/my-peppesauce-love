@@ -141,6 +141,30 @@ p {
   transform: translateY(2vw);
 }
 
+.handmill {
+  margin-top: -2vw;
+  width: 18vw;
+  height: auto;
+}
+
+.snake {
+  width: 16vw;
+  height: auto;
+}
+
+/* Line Dividers */
+.line {
+  width: 101%;
+  height: 0.25vw;
+  background-color: #feeee2;
+}
+.line.top {
+  margin-top: 0.5vw;
+}
+.line.bottom {
+  margin-bottom: 0.5vw;
+}
+
 .scroll-container {
   display: flex;
   flex-direction: row;
@@ -172,16 +196,11 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  row-gap: 2vw;
   border-radius: 5vw;
   border: 0.25vw solid #feeee2;
 }
-.main-section .text-container.left {
-  row-gap: 2vw;
-}
-.main-section .text-container.right {
-  row-gap: 1.5vw;
-}
-.main-section .text-container.right .img-container {
+.main-section .text-container .img-container {
   padding: 0.75vw;
   width: 101%;
   text-align: center;
@@ -190,6 +209,9 @@ p {
 }
 .main-section .logo-container .logo {
   width: 47vw;
+}
+.main-section.section-1 .right {
+  row-gap: 1.25vw;
 }
 
 /* -------------------- INFO SECTIONS -------------------- */
