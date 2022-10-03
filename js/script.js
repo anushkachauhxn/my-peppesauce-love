@@ -50,7 +50,7 @@ scrollContainers.forEach((scrollContainer) => {
 });
 
 /* INFO SECTIONS: INNER SCROLL */
-const infoSection = document.querySelectorAll(".info-section");
+const infoSection = document.querySelectorAll(".info-section.lg");
 
 infoSection.forEach((section) => {
   const scrollContainer = section.querySelector(".inner-scroll");

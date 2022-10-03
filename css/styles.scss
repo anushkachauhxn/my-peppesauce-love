@@ -242,8 +242,15 @@ p {
 
   .logo-container {
     height: 100%;
+    @include flex-center-row();
     .logo {
       width: 47vw;
+    }
+    .bottle {
+      margin: 0;
+      position: absolute;
+      height: 60vw;
+      z-index: 3;
     }
   }
 
@@ -391,6 +398,59 @@ p {
   top: 0;
   left: 0;
   @include flex-center-row();
-  background: #ce651432;
   z-index: 10;
+}
+
+/* Responsive Styles */
+.lg {
+  display: block;
+}
+.md,
+.sm {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .lg {
+    display: none;
+  }
+  .md {
+    display: block;
+  }
+
+  .info-section.md {
+    height: calc(100vw - 5vw - 5vw);
+    display: flex;
+
+    .content {
+      height: 90vw;
+      .inner-scroll {
+        height: auto;
+      }
+    }
+    .borders {
+      .wtf {
+        &.left {
+          width: 90vw;
+          top: 42.45vw;
+          left: -42.45vw;
+        }
+        &.right {
+          width: 90vw;
+          top: 42.45vw;
+          right: -42.45vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .lg {
+    display: none;
+  }
+  .md,
+  .sm {
+    display: block;
+  }
 }
