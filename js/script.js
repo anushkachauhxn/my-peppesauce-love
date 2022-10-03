@@ -87,5 +87,4 @@ new ScrollMagic.Scene({
   duration: 7220,
 })
   .setTween(bottleTl)
-  .addIndicators()
   .addTo(controller);
