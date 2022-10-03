@@ -45,7 +45,6 @@ scrollContainers.forEach((scrollContainer) => {
       duration: "200%",
     })
       .setTween(tl)
-      .addIndicators()
       .addTo(controller);
   }
 });
@@ -67,3 +66,26 @@ infoSection.forEach((section) => {
     .setTween(tl)
     .addTo(controller);
 });
+
+/* BOTTLE ANIMATION */
+const bottleContainer = document.querySelector(".bottle-container"),
+  bottle = bottleContainer.querySelector(".bottle");
+
+let bottleTl = gsap.timeline();
+bottleTl
+  .to(bottle, 1200, { x: "61vw", rotateZ: 18 })
+  .to(bottle, 1900, { x: "-61vw", rotateZ: -18 })
+  .to(bottle, 2100, { x: "61vw", rotateZ: 18 })
+  .to(bottle, 1100, { x: "0", rotateZ: 0 })
+  .to(bottle, 300, { x: "-10vw", rotateZ: -9 })
+  .to(bottle, 300, { x: "0", rotateZ: 0 })
+  .to(bottle, 320, { x: "0", rotateZ: 0 });
+
+new ScrollMagic.Scene({
+  triggerElement: document,
+  triggerHook: "onEnter",
+  duration: 7220,
+})
+  .setTween(bottleTl)
+  .addIndicators()
+  .addTo(controller);
