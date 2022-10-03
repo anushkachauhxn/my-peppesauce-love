@@ -440,10 +440,15 @@ a {
   z-index: 10;
 }
 
-/* Responsive Styles */
+/* ---------------------------------------- Responsive Styles ---------------------------------------- */
 .md,
 .sm {
   display: none;
+}
+
+.lg,
+.lg.md {
+  display: flex;
 }
 
 @media screen and (max-width: 991px) and (min-width: 479px) {
@@ -454,14 +459,10 @@ a {
   .md,
 .md.lg,
 .md.sm {
-    display: block;
-  }
-  .md.main-section {
     display: flex;
   }
   .md.info-section {
     height: 90vw;
-    display: flex;
   }
   .md.info-section .content {
     height: 90vw;
@@ -482,12 +483,13 @@ a {
 }
 @media screen and (max-width: 479px) {
   .lg,
+.lg.md,
 .md {
     display: none;
   }
   .sm,
 .sm.md {
-    display: block;
+    display: flex;
   }
   /* Text Styles */
   .mega-title {
@@ -600,7 +602,6 @@ a {
   }
   .sm.info-section {
     height: 140vw;
-    display: flex;
   }
   .sm.info-section .content {
     height: 140vw;
