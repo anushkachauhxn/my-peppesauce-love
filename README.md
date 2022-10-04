@@ -17,6 +17,8 @@
 
 ## Future Goals:
 
-- Creating the animated cursor
+- Animated cursor
+  - Attaching the click-me div to the cursor in larger screens
+  - Creating smoother transition in animated cursor (Later reference: [Codepen Example](https://codepen.io/sgorneau/pen/mWEddP))
 - Adding the second page - buy/checkout
 - Adding the loading animation

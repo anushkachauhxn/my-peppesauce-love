@@ -88,3 +88,24 @@ new ScrollMagic.Scene({
 })
   .setTween(bottleTl)
   .addTo(controller);
+
+/* CLICK ME CURSOR */
+const cursorContainer = document.querySelectorAll(
+    ".click-me .animation-container"
+  ),
+  starImgs = document.querySelectorAll(".click-me .star-3");
+
+// Text rotation
+let cursorTl = gsap.timeline({ repeat: -1 });
+cursorTl
+  .add("start")
+  .to(
+    cursorContainer,
+    1.5,
+    {
+      x: -45,
+      ease: Linear.easeNone,
+    },
+    "start"
+  )
+  .to(starImgs, 1.5, { rotateZ: 360, ease: Linear.easeNone }, "start");

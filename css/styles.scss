@@ -142,6 +142,11 @@ a {
   width: 9vw;
   height: auto;
 }
+.star-3 {
+  width: 2.5vw;
+  height: auto;
+  @include transform-animation();
+}
 .fire {
   width: 18.5vw;
   height: auto;
@@ -389,7 +394,7 @@ a {
   }
 }
 
-/* -------------------- BOTTLE CONTAINER : ANIMATED -------------------- */
+/* -------------------- BOTTLE CONTAINER (LG) : ANIMATED -------------------- */
 .bottle-container {
   width: 100%;
   height: 100%;
@@ -398,6 +403,29 @@ a {
   left: 0;
   @include flex-center-row();
   z-index: 10;
+}
+
+/* -------------------- CLICK ME CURSOR (MD+SM) : ANIMATED -------------------- */
+.click-me {
+  width: 11vw;
+  position: absolute;
+  transform: translate(5.5vw, -1vw);
+  @include flex-center-col();
+  background: $dark-bg-color;
+
+  border: 0.35vw solid $cream-color;
+  border-radius: 50%;
+  z-index: 5;
+  overflow: hidden;
+
+  .content {
+    @include flex-center-row();
+    .text-block {
+      font-size: 2vw;
+      line-height: 2vw;
+      white-space: nowrap;
+    }
+  }
 }
 
 /* ---------------------------------------- Responsive Styles ---------------------------------------- */
@@ -504,6 +532,9 @@ a {
   .star {
     width: 5vw;
   }
+  .star-3 {
+    width: 4vw;
+  }
   .fire {
     width: 30vw;
   }
@@ -551,6 +582,20 @@ a {
       height: 108vw;
       .logo {
         width: 100%;
+      }
+      .bottle {
+        height: 120vw;
+      }
+      .click-me {
+        width: 20vw;
+        transform: translate(12vw, -1vw);
+        border: 0.7vw solid $cream-color;
+        .content {
+          .text-block {
+            font-size: 4vw;
+            line-height: 4vw;
+          }
+        }
       }
     }
     .text-container {
