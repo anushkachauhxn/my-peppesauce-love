@@ -450,19 +450,21 @@ a {
 
 /* -------------------- CLICK ME CURSOR (MD+SM) : ANIMATED -------------------- */
 .click-me {
-  width: 11vw;
+  width: 10vw;
   position: absolute;
-  transform: translate(5.5vw, -1vw);
+  left: 0;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   background: #141329;
-  border: 0.35vw solid #feeee2;
+  border: 0.25vw solid #feeee2;
   border-radius: 50%;
-  z-index: 5;
+  z-index: 12;
   overflow: hidden;
+  transition: transform 0.23s;
 }
 .click-me .content {
   display: flex;
@@ -496,6 +498,12 @@ a {
 .md.lg,
 .md.sm {
     display: flex;
+  }
+  .md.main-section .logo-container .click-me {
+    width: 11vw;
+    left: 50%;
+    top: 28vw;
+    border: 0.35vw solid #feeee2;
   }
   .md.info-section {
     height: 90vw;
@@ -637,7 +645,8 @@ a {
   }
   .sm.main-section .logo-container .click-me {
     width: 20vw;
-    transform: translate(12vw, -1vw);
+    left: 50%;
+    top: 55vw;
     border: 0.7vw solid #feeee2;
   }
   .sm.main-section .logo-container .click-me .content .text-block {

@@ -407,16 +407,18 @@ a {
 
 /* -------------------- CLICK ME CURSOR (MD+SM) : ANIMATED -------------------- */
 .click-me {
-  width: 11vw;
+  width: 10vw;
   position: absolute;
-  transform: translate(5.5vw, -1vw);
+  left: 0;
+  top: 0;
   @include flex-center-col();
   background: $dark-bg-color;
 
-  border: 0.35vw solid $cream-color;
+  border: 0.25vw solid $cream-color;
   border-radius: 50%;
-  z-index: 5;
+  z-index: 12;
   overflow: hidden;
+  transition: transform 0.23s;
 
   .content {
     @include flex-center-row();
@@ -447,6 +449,17 @@ a {
   .md.lg,
   .md.sm {
     display: flex;
+  }
+
+  .md.main-section {
+    .logo-container {
+      .click-me {
+        width: 11vw;
+        left: 50%;
+        top: 28vw;
+        border: 0.35vw solid $cream-color;
+      }
+    }
   }
 
   .md.info-section {
@@ -588,7 +601,8 @@ a {
       }
       .click-me {
         width: 20vw;
-        transform: translate(12vw, -1vw);
+        left: 50%;
+        top: 55vw;
         border: 0.7vw solid $cream-color;
         .content {
           .text-block {

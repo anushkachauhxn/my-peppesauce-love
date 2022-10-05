@@ -95,7 +95,7 @@ const cursorContainer = document.querySelectorAll(
   ),
   starImgs = document.querySelectorAll(".click-me .star-3");
 
-// Text rotation
+// div animation: Text + Star Rotation
 let cursorTl = gsap.timeline({ repeat: -1 });
 cursorTl
   .add("start")
@@ -109,3 +109,17 @@ cursorTl
     "start"
   )
   .to(starImgs, 1.5, { rotateZ: 360, ease: Linear.easeNone }, "start");
+
+// lg: Moving div with cursor
+const clickMe = document.querySelector(".lg.click-me");
+
+document.addEventListener(
+  "mousemove",
+  (e) => {
+    console.log(e.clientX, e.clientY);
+    clickMe.style.transform =
+      "translateY(" + (e.clientY + window.scrollY - 100) + "px)";
+    clickMe.style.transform += "translateX(" + (e.clientX - 90) + "px)";
+  },
+  false
+);
